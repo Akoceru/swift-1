@@ -16,13 +16,20 @@ class ViewController: UIViewController {
     
     @IBAction func ChangeColor(){
         NSLog("test")
-        if(mSegmentedBar?.selectedSegmentIndex == 0){
-            mTitleLabel?.textColor = UIColor.init(red: 0, green: 0, blue: 1.0, alpha: 1)
-        }else if(mSegmentedBar?.selectedSegmentIndex == 1){
+        switch mSegmentedBar!.selectedSegmentIndex {
+        case 0:
+            mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            break
+        case 1:
             mTitleLabel?.textColor = UIColor.init(red: 1.0, green: 0, blue: 0, alpha: 1)
-        }else{
+            break
+        case 2:
             mTitleLabel?.textColor = UIColor.init(red: 0, green: 1.0, blue: 0, alpha: 1)
+            break
+        default:
+            mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         }
+        
     }
 
     

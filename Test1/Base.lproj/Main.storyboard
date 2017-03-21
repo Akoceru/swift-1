@@ -55,15 +55,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dce-Wg-Ltj">
+                                <rect key="frame" x="66" y="222" width="243" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Xgl-VW-O9d"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="LightGrey"/>
+                                    <segment title="Gray"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ob0-Rc-6Es" firstAttribute="centerX" secondItem="5Ou-T7-AO7" secondAttribute="centerX" id="0gC-ee-TtV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dce-Wg-Ltj" secondAttribute="trailing" constant="50" id="3dy-Jz-oWd"/>
                             <constraint firstItem="GYc-nu-ggO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Acr-Tl-SdQ"/>
                             <constraint firstItem="GYc-nu-ggO" firstAttribute="top" secondItem="5Ou-T7-AO7" secondAttribute="bottom" constant="16" id="Ahx-H9-ee7"/>
+                            <constraint firstItem="dce-Wg-Ltj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="LAP-gj-sVM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Ou-T7-AO7" secondAttribute="trailing" constant="50" id="NNG-ei-iIg"/>
                             <constraint firstItem="5Ou-T7-AO7" firstAttribute="top" secondItem="ob0-Rc-6Es" secondAttribute="bottom" constant="16" id="Pab-0e-5dK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GYc-nu-ggO" secondAttribute="trailing" constant="50" id="a26-rm-fqH"/>
+                            <constraint firstItem="dce-Wg-Ltj" firstAttribute="top" secondItem="GYc-nu-ggO" secondAttribute="bottom" constant="41" id="cD1-fe-gdF"/>
                             <constraint firstItem="ob0-Rc-6Es" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="q1S-sP-eVd"/>
                             <constraint firstItem="5Ou-T7-AO7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="vuJ-9V-id3"/>
                         </constraints>
