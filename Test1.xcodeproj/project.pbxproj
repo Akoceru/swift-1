@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA34EAC1E8120BC00E866DF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BA34EAB1E8120BC00E866DF /* .gitignore */; };
 		1BC067E01E7FE1C4005D89A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC067DF1E7FE1C4005D89A5 /* AppDelegate.swift */; };
 		1BC067E21E7FE1C4005D89A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC067E11E7FE1C4005D89A5 /* ViewController.swift */; };
 		1BC067E51E7FE1C4005D89A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC067E31E7FE1C4005D89A5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BA34EAB1E8120BC00E866DF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1BC067DC1E7FE1C4005D89A5 /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC067DF1E7FE1C4005D89A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC067E11E7FE1C4005D89A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		1BC067D31E7FE1C4005D89A5 = {
 			isa = PBXGroup;
 			children = (
+				1BA34EAB1E8120BC00E866DF /* .gitignore */,
 				1BC067DE1E7FE1C4005D89A5 /* Test1 */,
 				1BC067F31E7FE1C5005D89A5 /* Test1Tests */,
 				1BC067FE1E7FE1C5005D89A5 /* Test1UITests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA34EAC1E8120BC00E866DF /* .gitignore in Resources */,
 				1BC067EA1E7FE1C4005D89A5 /* LaunchScreen.storyboard in Resources */,
 				1BC067E71E7FE1C4005D89A5 /* Assets.xcassets in Resources */,
 				1BC067E51E7FE1C4005D89A5 /* Main.storyboard in Resources */,
@@ -514,6 +518,7 @@
 				1BC068061E7FE1C5005D89A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BC068071E7FE1C5005D89A5 /* Build configuration list for PBXNativeTarget "Test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				1BC068091E7FE1C5005D89A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BC0680A1E7FE1C5005D89A5 /* Build configuration list for PBXNativeTarget "Test1UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				1BC0680C1E7FE1C5005D89A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
