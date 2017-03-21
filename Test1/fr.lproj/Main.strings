@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Ou-T7-AO7"; */
+"5Ou-T7-AO7.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; GYc-nu-ggO.segmentTitles[0] = "Blue"; ObjectID = "GYc-nu-ggO"; */
+"GYc-nu-ggO.segmentTitles[0]" = "Blue";
+
+/* Class = "UISegmentedControl"; GYc-nu-ggO.segmentTitles[1] = "Red"; ObjectID = "GYc-nu-ggO"; */
+"GYc-nu-ggO.segmentTitles[1]" = "Red";
+
+/* Class = "UISegmentedControl"; GYc-nu-ggO.segmentTitles[2] = "Green"; ObjectID = "GYc-nu-ggO"; */
+"GYc-nu-ggO.segmentTitles[2]" = "Green";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Kte-oE-GfS"; */
+"Kte-oE-GfS.text" = "Title";
+
+/* Class = "UISegmentedControl"; dce-Wg-Ltj.segmentTitles[0] = "Black"; ObjectID = "dce-Wg-Ltj"; */
+"dce-Wg-Ltj.segmentTitles[0]" = "Black";
+
+/* Class = "UISegmentedControl"; dce-Wg-Ltj.segmentTitles[1] = "LightGrey"; ObjectID = "dce-Wg-Ltj"; */
+"dce-Wg-Ltj.segmentTitles[1]" = "LightGrey";
+
+/* Class = "UISegmentedControl"; dce-Wg-Ltj.segmentTitles[2] = "Gray"; ObjectID = "dce-Wg-Ltj"; */
+"dce-Wg-Ltj.segmentTitles[2]" = "Gray";
+
+/* Class = "UILabel"; text = "HELLO WORLD"; ObjectID = "ob0-Rc-6Es"; */
+"ob0-Rc-6Es.text" = "HELLO WORLD";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "sEu-Um-9Jy"; */
+"sEu-Um-9Jy.text" = "Subtitle";

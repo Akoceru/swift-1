@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var mTitleLabel : UILabel?
 
@@ -16,12 +16,44 @@ class ViewController: UIViewController {
     
     @IBOutlet var mSegmentedBarB : UISegmentedControl?
     
+    @IBOutlet var mTableView : UITableView?
+    
+    var mData : MyDataModel = MyDataModel()
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let tGroup : MyGroupModel = mData.mList[section] as! MyGroupModel
+        return tGroup.mList.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let tCell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath)
+        let tGroup : MyGroupModel = mData.mList[indexPath.section] as! MyGroupModel
+        let tCellData : MyCellModel = tGroup.mList[indexPath.row] as! MyCellModel
+        
+        tCell.textLabel?.text = tCellData.mTitle
+        tCell.detailTextLabel?.text = tCellData.mSubtitle
+        tCell.imageView?.image = tGroup.mImage
+        return tCell
+    }
+    
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return mData.mList.count
+    }
+    
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String {
+        let tGroup : MyGroupModel = mData.mList[section] as! MyGroupModel
+        return tGroup.mTitle
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mTitleLabel?.text = "Axel"
         ChangeColor(sSender: mSegmentedBar!)
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "PlatinumTitleKey", withAssetName: "platinum", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "HiorophantTitlekey", withAssetName: "hiero", withCellNumber: 10))
+        mData.addGroup(sGroup: MyGroupModel.createWithTitle(sTitleLocalizationKey: "ChariotTitleKey", withAssetName: "chariot", withCellNumber: 10))
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +66,7 @@ class ViewController: UIViewController {
     }
     @IBAction func ChangeColor(sSender : UISegmentedControl){
         NSLog("test")
+        
         switch sSender.selectedSegmentIndex {
         case 0:
             if (sSender == mSegmentedBar) {
