@@ -14,29 +14,14 @@ class ViewController: UIViewController {
 
     @IBOutlet var mSegmentedBar : UISegmentedControl?
     
-    @IBAction func ChangeColor(){
-        NSLog("test")
-        switch mSegmentedBar!.selectedSegmentIndex {
-        case 0:
-            mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-            break
-        case 1:
-            mTitleLabel?.textColor = UIColor.init(red: 1.0, green: 0, blue: 0, alpha: 1)
-            break
-        case 2:
-            mTitleLabel?.textColor = UIColor.init(red: 0, green: 1.0, blue: 0, alpha: 1)
-            break
-        default:
-            mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-        }
-        
-    }
-
+    @IBOutlet var mSegmentedBarB : UISegmentedControl?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mTitleLabel?.text = "Axel"
+        ChangeColor(sSender: mSegmentedBar!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +32,46 @@ class ViewController: UIViewController {
     @IBAction func IamNotRich() {
         mTitleLabel?.text = "0€"
     }
+    @IBAction func ChangeColor(sSender : UISegmentedControl){
+        NSLog("test")
+        switch sSender.selectedSegmentIndex {
+        case 0:
+            if (sSender == mSegmentedBar) {
+                mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            }
+            else if (sSender == mSegmentedBarB){
+                mTitleLabel?.textColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+            }
+            break
+        case 1:
+            if (sSender == mSegmentedBar) {
+                mTitleLabel?.textColor = UIColor.init(red: 1.0, green: 0, blue: 0, alpha: 1)
+            }
+            else if (sSender == mSegmentedBarB){
+                mTitleLabel?.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            }
+            break
+        case 2:
+            if (sSender == mSegmentedBar) {
+                mTitleLabel?.textColor = UIColor.init(red: 0, green: 1.0, blue: 0, alpha: 1)
+            }
+            else if (sSender == mSegmentedBarB){
+                mTitleLabel?.textColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            }
+            break
+        default:
+            if (sSender == mSegmentedBar) {
+                mTitleLabel?.textColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            }
+            else if (sSender == mSegmentedBarB){
+                mTitleLabel?.textColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+            }
+            
+        }
+        
+    }
 
+    
     
 }
 
